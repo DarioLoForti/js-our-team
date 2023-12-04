@@ -1,3 +1,5 @@
+// MILESTON 0
+
 //  definisco array di oggetti
 
 let employees = [
@@ -36,4 +38,39 @@ let employees = [
         role : "Graphic Designer",
         image : "barbara-ramos-graphic-designer.jpg"
     },
-]
+];
+console.log(employees);
+
+// MILESTON 1
+let impiegati = [];
+// stampo innconsole tramite cilco for in informazioni di ogni impiegato
+for(let key in employees){
+    console.log(employees[key]);
+}
+
+// MILESTON 2
+
+// stampo su DOM informazioni impiegati tramite stringhe;
+
+let contendCard = document.getElementById("content-card");
+
+for(i=0; i<=employees.length; i++){
+    
+    let div = document.createElement("content-card");
+    div.classList.add("col-4");
+    div.classList.add("my-5");
+    div.classList.add("text-white");
+    
+    contendCard.appendChild(div);
+    
+    let card = document.createElement("div");
+    card.classList.add("div");
+    div.appendChild(card);
+
+    let nome = `<h3>${employees[i].name}</h3>`;
+    let role = `<h4>${employees[i].role}</h4>`;
+    let image = `<p>${employees[i].image}</p>`;
+
+    card.innerHTML = nome + "<br>" + role + "<br>" + image;
+    console.log(card);
+}
