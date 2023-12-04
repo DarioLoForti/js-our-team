@@ -69,7 +69,8 @@ for(i=0; i<=employees.length; i++){
 
     let nome = `<h3>${employees[i].name}</h3>`;
     let role = `<h4>${employees[i].role}</h4>`;
-    let image = `<p>${employees[i].image}</p>`;
+    let image = `<img src=./img/${employees[i].image} alt="${employees[i].name}">`;
+    
 
     card.innerHTML = nome + "<br>" + role + "<br>" + image;
     console.log(card);
