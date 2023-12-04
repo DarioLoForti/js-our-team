@@ -12,7 +12,7 @@ let employees = [
     {
         name : "Angela Carroll",
         role : "Chief Editor",
-        image : "angela-carrol-chief-editor.jpg",
+        image : "angela-caroll-chief-editor.jpg",
     },
 
     {
@@ -58,8 +58,9 @@ for(i=0; i<=employees.length; i++){
     
     let div = document.createElement("content-card");
     div.classList.add("col-4");
-    div.classList.add("my-5");
+    div.classList.add("m-5");
     div.classList.add("text-white");
+   
     
     contendCard.appendChild(div);
     
@@ -72,6 +73,6 @@ for(i=0; i<=employees.length; i++){
     let image = `<img src=./img/${employees[i].image} alt="${employees[i].name}">`;
     
 
-    card.innerHTML = nome + "<br>" + role + "<br>" + image;
+    card.innerHTML = image + "<br>" + nome + "<br>" + role;
     console.log(card);
 }

@@ -7,3 +7,9 @@
 body{
     background-color: rgb(6, 6, 68);
 }
+img{
+    border-radius: 50%;
+}
+#content-card{
+    text-align: center;
+}
