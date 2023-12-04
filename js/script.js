@@ -34,7 +34,7 @@ let employees = [
     },
 
     {
-        name : "Barbara ramos",
+        name : "Barbara Ramos",
         role : "Graphic Designer",
         image : "barbara-ramos-graphic-designer.jpg"
     },

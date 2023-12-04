@@ -9,7 +9,41 @@ body{
 }
 img{
     border-radius: 50%;
+    position: relative;
+    transition: transform 1s ease-in-out;
 }
 #content-card{
     text-align: center;
+}
+h3{
+    padding: 20px;
+}
+h4{
+    color: gray;
+    text-decoration: underline;
+}
+img:hover{
+    border: 10px solid gray;
+    transform: rotateY(360deg);
+}
+img::before, img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img::before {
+    width: 80px;
+    height: 80px;
+    background-color: #ffd700;
+    border-radius: 50%;
+}
+
+img::after {
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
 }
