@@ -42,11 +42,15 @@ let employees = [
 console.log(employees);
 
 // MILESTON 1
-let impiegati = [];
+
 // stampo innconsole tramite cilco for in informazioni di ogni impiegato
 for(let key in employees){
     console.log(employees[key]);
 }
+for(let key of employees){
+    console.log(key.name);
+}
+
 
 // MILESTON 2
 
