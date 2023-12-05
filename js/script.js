@@ -60,10 +60,11 @@ let contendCard = document.getElementById("content-card");
 
 for(i=0; i<=employees.length; i++){
     
-    let div = document.createElement("content-card");
+    let div = document.createElement("div");
     div.classList.add("col-4");
     div.classList.add("m-5");
     div.classList.add("text-white");
+    
    
     
     contendCard.appendChild(div);
